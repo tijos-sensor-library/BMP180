@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
 import tijos.framework.sensor.bmp180.TiBMP180;
-import tijos.util.Delay;
+import tijos.framework.util.Delay;
 
 public class TiBMP180Sample {
 

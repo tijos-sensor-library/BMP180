@@ -3,8 +3,8 @@ package tijos.framework.sensor.bmp180;
 import java.io.IOException;
 
 import tijos.framework.devicecenter.TiI2CMaster;
-import tijos.util.BigBitConverter;
-import tijos.util.Delay;
+import tijos.framework.util.BigBitConverter;
+import tijos.framework.util.Delay;
 
 /*
 *  BMP180 Digital Pressure Sensor Class
@@ -106,7 +106,7 @@ public class TiBMP180 {
 	 */
 	public void begin() throws IOException {
 
-		this.bmp180i2c.setBaudRate(400);
+		this.bmp180i2c.setWorkBaudrate(400);
 
 		byte[] data = new byte[22];
 
